@@ -1,5 +1,4 @@
 @import "../css/reset.css";
-@import "../css/skeleton.css";
 @import "../css/superfish.css";
 @import "../css/flexslider.css";
 article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
@@ -7,51 +6,19 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 html {width:100%}
 
 body {
-  font-family:'Myriad Pro', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size:18px;
-  line-height:20px;
+  line-height:26px;
   color:#005e7c;
   min-width:960px;
-  background: #fff;
+  background:url(../images/body_bg.jpg) 50% 0 repeat #fff;
   -webkit-text-size-adjust: none;
+}
 
-}
-.container_main{
-  margin: 0 auto;
-  width: 1240px;
-}
 .main{
   width: 1165px;
   margin: 0 auto;
 }
-.wrapper{
-  overflow: hidden;
-}
-/*----------------------> Links And buttons <------------------*/
-a {
-  color:#;
-  outline:none;
-  text-decoration:none;
-  cursor:pointer;
-}
-a:hover{
-  color:#;
-  text-decoration:none;
-}
-
-.button{
-  display:inline-block;
-  padding:0 0 0 0;
-  margin: 0 0 0 0;
-  font-size: px;
-  line-height: px;
-  color:#;
- }
-.button:hover{
-  background:;
-  color:#000;
-}
-
 /*----------------------> Basic Classes <------------------*/
 .reg {text-transform:uppercase}
 .f_left {float:left}
@@ -74,6 +41,14 @@ a:hover{
 .p_rel{position: relative;}
 .p_fix{position: fixed;}
 .clear {clear:both;width:100%;line-height:0;font-size:0;}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 .wrapper {overflow:hidden}
 .f_elem *:first-child{margin-top: 0 !important;}
 .f_elem1 *:first-child{margin-top: 0 !important;border: none !important;}
@@ -86,64 +61,113 @@ a:hover{
 .d_in-block{ display:inline-block;}
 
 /*----------------------> Basic Colors <------------------*/
+.pink_skin{
+  background-color: #ea528e;
+  border-top: 6px solid #ee75a5;
+}
+.purple_skin{
+  background-color: #a165c0;
+  border-top: 6px solid #b484cd;
+}
+.green_skin{
+  background-color: #acc90a;
+  border-top: 6px solid #bdd43b;
+}
+.blue_skin{
+  background-color: #42abe5;
+  border-top: 6px solid #68bcea;
+}
+.orange_skin{
+  background-color: #f9b833;
+  border-top: 6px solid #f7a600;
+}
 
+
+
+/*----------------------> Links And buttons <------------------*/
+a {
+  color:#005e7c;
+  outline:none;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover{
+  color:#;
+  text-decoration:none;
+}
+
+.button{
+  display:inline-block;
+  padding:0 0 0 0;
+  margin: 0 0 0 0;
+  font-size: px;
+  line-height: px;
+  color:#;
+ }
+.button:hover{
+  background:;
+  color:#000;
+}
 
 
 /*======================> Header <======================*/
 
-header {
-  background: url(../images/header.png) no-repeat;
+header{
+  width: 1240px;
   height: 454px;
+  background: url(../images/header.jpg) no-repeat;
+  margin: 0 auto;
 }
-h1.logo{}
-h1.logo a{
+header h1{}
+header h1 a {
   display:block;
-  width:px;
-  height:px;
+  width:278px;
+  height:85px;
   background:url(../images/logo.png) 0 0 no-repeat;
   text-decoration:none;
   text-indent:-9999px;
 }
-.menu{
-  background: #fbefb6;
-}
-.nav_item{
-  width: 20%;
-  padding: 5px 0px 10px 0px;
-  text-align: center;
 
- 
-}
-.nav_item a{
-  color: #fff;
-  font-size: 24px;
-  font-weight: 800;
 
-}
-.menu_item1{
-  background: #ea528e;
-  border-top: 6px solid #ee75a5;
-}
-.menu_item2{
-  background:#a165c0;
-  border-top: 6px solid #b484cd;
-}
-.menu_item3{
-  background: #acc90a;
-  border-top: 6px solid #bdd43b;
-}
-.menu_item4{
-  background: #42abe5;
-  border-top: 6px solid #68bcea;
-}
-.menu_item5{
-  background: #f7a600;
-  border-top: 6px solid #f9b833;
-}
 /*=====================> Content ========================*/
-#content {padding:0px 0px 0px 0px; min-height: 1500px;}
+#content {padding:0px 0px 0px 0px; min-height: 1100px;}
 .cont_pad{padding:0 0 0 0 !important;}
+.second_menu{
+  background: #e4f6fd;
+  padding: 25px 0 20px 8px;
+  margin-bottom: 10px;
+}
+.second_item{
+  display: block;
+  padding: 0 0 13px 30px;
+  background:url(../images/icon_home.png)no-repeat;
+  background-position:10px 10px;
+}
+.second_link{
+	font-weight:600;
+}
+.container_left{
+  width: 303px;
+  margin-right:10px;
+}
+.container{
+  margin-left:10px; 
+  width: auto;
+}
+.container_img img{
+  margin:12px 0 20px 10px;
+}
 
+.container_pad{
+  padding-left:15px;
+}
+.container_contact{
+  padding:10px 0 0 10px;
+  font-size:22px;
+}
+.container_title{
+	padding-top:15px;
+}
 /*=====================> Paragraphs ========================*/
 
 p {margin-bottom:18px}
@@ -156,45 +180,57 @@ p {margin-bottom:18px}
 
 /*=====================> Lists ========================*/
 .list1{}
-.list1_item{
+.list1 li{
   background:url(../images/marker1.png) 0 7px no-repeat;
   padding-left:20px;
 }
-.list1_link{}
+.list1 a{}
 
 .list2{}
-.list2_item{
-  background:url(../images/marker1.png) 0 7px no-repeat;
+.list2 li{
+  background:url(../images/marker2.png) 0 7px no-repeat;
   padding-left:20px;
 }
-.list2_link{}
+.list2 a{}
 
 .list3{}
-.list3_item{
-  background:url(../images/marker1.png) 0 7px no-repeat;
+.list3 li{
+  background:url(../images/marker3.png) 0 7px no-repeat;
   padding-left:20px;
 }
-.list3_link{}
+.list3 a{}
 
 /*=====================> Titles ========================*/
 h2,h3,h4{
   font-weight:normal;
 }
 .title1{
-  font-size: px;
-  line-height: px;
-  color:#;
+  font-size:34px;
+  line-height:36px;
+  color:#005e7c;
 }
 
 .title2{
-  font-size: px;
-  line-height: px;
-  color:#;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+  font-weight: 700;
+  background: #42abe5;
+  border-top: 6px solid #68bcea;
+  height: 26px;
+  padding: 8px 10px 12px 10px;
+  display: block;
+  text-transform: uppercase;
 }
 
+
+
 .t_ind{ margin-bottom:px;}
-.t_ind1{ margin-bottom:px;}
+.t_ind1{ margin-bottom:8px;}
 .t_ind2{ margin-bottom:px;}
+.t_top1{ margin-top: 15px;}
+.t_top2{ margin-top: 10px;}
 
 /*================================>> GOOGLE FONTS  <<========================================*/
 
@@ -208,10 +244,10 @@ a{
     transition: all 0.7s ease;
 }
 a:hover{
-    -webkit-transition: all 0.1s ease;
-    -moz-transition: all 0.1s ease;
-    -o-transition: all 0.1s ease;
-    transition: all 0.1s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
@@ -234,7 +270,7 @@ a:hover{
   text-align: center;
   padding: 20px 0;
 }
-#contact-form textarea, #contact-form input[type="text"]{
+#contact-form textarea, #contact-form input {
   margin:0;
   font-size:12px;
   border:1px solid #e7e7e7;
@@ -248,7 +284,7 @@ a:hover{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#contact-form input[type="text"]{
+#contact-form input {
   width:347px;
 }
 #contact-form textarea {
@@ -338,12 +374,19 @@ a:hover{
 
 /*================================>> Footer <<========================================*/
 footer {
-  padding:22px 0 26px;
+  
+  padding-bottom: 30px;
 }
-.social{
+footer img{
+  width: 100%;
+  top:-200px;
+  left:0;
+  z-index: 1;
+}
+footer .social{
   overflow:hidden;
 }
-.social a{
+footer .social a{
   display:block;
   float:left;
   width:32px;
@@ -351,7 +394,7 @@ footer {
   overflow:hidden;
   margin-left:8px;
 }
-.social a:first-child{margin: 0 0 0 0;}
-.social a:hover img{
+footer .social a:first-child{margin: 0 0 0 0;}
+footer .social a:hover img{
   margin-top:-32px;
 }
